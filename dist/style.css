@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Work+Sans:wght@400;500&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Montserrat', 'Work Sans', sans-serif;
+}
+
+body {
+	background: linear-gradient(to top, rgb(49, 1, 46), rgb(73, 3, 74));
+	background-repeat: no-repeat;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.warn {
+	display: none;
+}
+.container {
+	margin: 30px 50px;
+	width: 800px;
+	height: 400px;
+	background-image: linear-gradient(to bottom, rgb(27, 2, 25) 0%, rgb(65, 3, 61) 50%, #f5f5f5 50%, #f5f5f5 100%);
+	border-radius: 20px;
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-around;
+	box-shadow: 0px 0px 30px 10px #000;
+}
+.sign-in {
+	background-color: #f5f5f5;
+	margin: 50px 0px;
+	flex-basis: 50%;
+	height: 100%;
+	text-align: center;
+	align-items: center;
+	line-height: 42px;
+	border-radius: 10% 48% 100% 10%/ 10% 50% 50% 12%;
+}
+.sign-in h1 {
+	margin: 20px;
+}
+.socials {
+	display: flex;
+	width: 140px;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-between;
+	margin-left: 130px;
+}
+.socials .icon {
+	border: 1px solid darkgrey;
+	outline: none;
+	border-radius: 5px;
+	width: 20px;
+	height: 20px;
+	padding: 5px;
+	text-align: center;
+	cursor: pointer;
+	transition: transform 0.4s;
+}
+.socials .icon:hover {
+	transform: translateY(-2px);
+}
+.socials .icon i {
+	color: rgb(93, 92, 92);
+	transform: translateY(-7px);
+}
+.sign-in label {
+	color: darkgray;
+}
+#email,
+#password {
+	height: 40px;
+	border-radius: 10px;
+	border: none;
+	outline: none;
+	background-color: #d1cece;
+	width: 300px;
+	padding-left: 10px;
+	margin-bottom: 20px;
+}
+#email:focus,
+#password:focus {
+	border: 1px solid rgb(65, 3, 61);
+}
+.sign-in p {
+	color: darkgray;
+	font-size: 0.9em;
+}
+.sign-in-btn {
+	color: #fff;
+	height: 35px;
+	width: 120px;
+	border: none;
+	background: linear-gradient(to top, rgb(103, 1, 96), rgb(73, 3, 74));
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+/* SIGN UP */
+
+.sign-up {
+	flex-basis: 50%;
+	height: 100%;
+	border-radius: 100% 12% 5% 33% / 50% 12% 5% 50%;
+	background: radial-gradient(rgb(126, 12, 118), rgb(65, 3, 61), rgb(27, 2, 25));
+	color: #fff;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+.sign-up-text {
+	padding: 50px;
+	margin-top: 100px;
+}
+.sign-up-text h1 {
+	font-size: 1.8em;
+}
+.sign-up-text p {
+	font-size: 0.8em;
+	line-height: 15px;
+	font-family: 'Work Sans';
+}
+.sign-up-btn {
+	background: transparent;
+	width: 120px;
+	height: 35px;
+	border: 1px solid #f5f5f5;
+	outline: none;
+	border-radius: 5px;
+	color: #f5f5f5;
+	margin-top: 20px;
+	cursor: pointer;
+}
+
+@media (max-width: 850px) {
+	.warn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+		width: 100vw;
+		text-align: center;
+	}
+	.container {
+		display: none;
+	}
+}
